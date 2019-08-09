@@ -28,7 +28,6 @@ namespace DesignPatterns.PublishSubscribe
                 for (int hour = 0; hour < 24; hour++)
                 {
                     Thread.Sleep(1000);
-                    Console.WriteLine($"The time is {hour} o'clock");
                     var random = new Random();
                     //check the babies are sleeping or not
                     babies.ForEach(baby =>

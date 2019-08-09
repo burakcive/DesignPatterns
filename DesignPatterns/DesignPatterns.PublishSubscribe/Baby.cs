@@ -8,6 +8,10 @@ namespace DesignPatterns.PublishSubscribe
         public bool IsSleeping { get; set; } = true;
         public int LastSleptAt { get; set; } = 0;
 
+        public bool CheckIfCrying => !IsSleeping && new Random().Next(0, 4) == 1;
+        public bool CheckIfWakesUp => IsSleeping && new Random().Next(0, 3) == 1;
+        public bool CheckIfSleeps(int hour) => !IsSleeping && hour == LastSleptAt + 4;
+
         public event EventHandler<BabyEventArgs> BabyAwake;
         public event EventHandler<BabyEventArgs> BabySleep;
         public event EventHandler<BabyEventArgs> BabyCry;

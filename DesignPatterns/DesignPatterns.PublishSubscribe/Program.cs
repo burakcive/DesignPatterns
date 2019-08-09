@@ -32,15 +32,15 @@ namespace DesignPatterns.PublishSubscribe
                     //check the babies are sleeping or not
                     babies.ForEach(baby =>
                     {
-                        if (!baby.IsSleeping && random.Next(0, 4) == 1) //20% chance baby cries
+                        if (baby.CheckIfCrying)
                         {
                             baby.OnCry(hour);
                         }
-                        if (baby.IsSleeping && random.Next(0, 3) == 1) //25% chance baby wakes up
+                        if (baby.CheckIfWakesUp)
                         {
                             baby.OnBabyAwake(hour);
                         }
-                        else if (!baby.IsSleeping && hour == baby.LastSleptAt + 4) //baby is awake for 4 hours
+                        else if (baby.CheckIfSleeps(hour))
                         {
                             baby.Sleep(hour);
                         }

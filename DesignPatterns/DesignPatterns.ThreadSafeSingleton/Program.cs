@@ -20,7 +20,6 @@ namespace DesignPatterns.ThreadSafeSingleton
             {
                 Console.WriteLine("Same instance\n");
             }
-
             // Next, load balance 15 requests for a server
 
             LoadBalancer balancer = LoadBalancer.GetLoadBalancer();
@@ -31,9 +30,7 @@ namespace DesignPatterns.ThreadSafeSingleton
             }
 
             // Wait for user
-
             Console.ReadKey();
-
         }
     }
 

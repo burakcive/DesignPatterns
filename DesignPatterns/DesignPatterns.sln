@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.FactoryMetho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Strategy", "DesignPatterns.Strategy\DesignPatterns.Strategy.csproj", "{0F75217A-C43C-4401-BDBD-DFB282E05E8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.PublishSubscribe", "DesignPatterns.PublishSubscribe\DesignPatterns.PublishSubscribe.csproj", "{DD8922CD-4C7A-404F-A168-49B288F9420E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0F75217A-C43C-4401-BDBD-DFB282E05E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F75217A-C43C-4401-BDBD-DFB282E05E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F75217A-C43C-4401-BDBD-DFB282E05E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8922CD-4C7A-404F-A168-49B288F9420E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8922CD-4C7A-404F-A168-49B288F9420E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8922CD-4C7A-404F-A168-49B288F9420E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8922CD-4C7A-404F-A168-49B288F9420E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
